@@ -1,0 +1,65 @@
+# Meu primeiro projeto Python!!!
+#print () = comando de saida
+print("Alo Mundo")
+# Quando quiser guarda o uma string!
+
+nome = "Jailton Dayvid"
+# Quando quiser guarda o numero inteiro!
+idade = 38
+
+#Exibir o meu nome (que está dentro da variavel)
+
+print(nome)
+
+#Exibir a idade (que está dentro da variavel)
+
+print(idade)
+#Quando quiser exibir a frase (meu nome ou idade é, completando com a variavél
+
+print("Meu nome "+nome)
+print("Minha idade "+str(idade))
+print(f"Minha idade {idade}\n")
+print("Minha idade {}".format(idade))
+
+#Quando quiser exibir (meu nome .... e tenho idade ....colocar as variaveis dentro do format
+print("Meu nome {} e tenho {} anos".format(nome,idade))
+#                      Fim
+
+# Aula 26102022A comando input(): quero permitir que
+# o usuário digite algo...
+nome = input("Digite seu nome: ")
+#pede a idade para o usuário "Qual sua idade?"
+idade = int(input("Digite sua idade: "))
+
+#comando de saída..exibir na tela
+print(f"Boa noite, seu nome é {nome}")
+#exiba "Sua idade é ..."
+print("Sua idade é {}".format(idade))
+
+#e se eu quisesse mostrar o DOBRO da idade informada?
+dobro = idade * 2
+print("O dobro da idade informada é {}".format(dobro))
+
+#Estrutura condicional - o famoso "SE" (if)
+#Se a pessoa for maior de idade, mostre "Você é maior de idade, ótimo! Já pode beber ou dirigir"
+if idade >= 18:
+  print("Você é maior de idade, ótimo! Já pode beber ou dirigir")
+else:
+  print("Você é xóven ainda, xóven ainda...")
+
+#E se eu quisessem perguntar o gênero (M = Masculino e F = Feminino)
+#Mostre (...e você também precisa/precisou prestar o serviço militar obrigatório)
+
+genero = input("Informe o gênero M=Masculino, F=Feminino, O=Outros")
+if idade >=18 and genero == "M":
+  print("...e você também precisa prestar o serviço militar obrigatório")
+
+#Aula 26102022B Pede o nome do aluno e sua nota (de 0 a 10) e, se ele tirou nota 10, mostra "Você é bichão, mesmo..."
+nome = input("Informe seu nome: ")
+nota = float(input("Digite sua nota: "))
+if (nota == 10):
+  print(f"{nome}, você é o bichão, mesmo!")
+elif (nota >= 6 and nota <10):
+  print (f"{nome}, Recomendo um pouco mais de estudos, você está em um bom caminho!")
+else:
+  print ("Poxa Cara!!! Infelizmente não foi dessa vez e você não tirou a nota máxima! 10!")
